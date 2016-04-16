@@ -1,4 +1,5 @@
 /*global $*/
+/*global Stripe */
 $(document).ready(function() {
   var show_error, stripeResponseHandler, submitHandler;
   
@@ -34,7 +35,7 @@ $(document).ready(function() {
       $("[data-stripe=exp-year]").remove();
       $("[data-stripe=exp-month]").remove();
       $("[data-stripe=label]").remove();
-      $form.get(0).submit;
+      $form.get(0).submit();
     }
     return false;
   };
